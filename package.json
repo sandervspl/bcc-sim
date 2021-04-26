@@ -1,0 +1,19 @@
+{
+  "name": "land-game",
+  "version": "0.1.0",
+  "description": "Monorepo for Land Game",
+  "scripts": {
+    "build:client": "npm --prefix client run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandervspl/land-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandervspl/land-game/issues"
+  },
+  "homepage": "https://github.com/sandervspl/land-game#readme"
+}
