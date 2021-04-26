@@ -21,6 +21,7 @@ const Home: React.FC = () => {
         <Logo />
       </HomeHeader>
       <HomeContent>
+        <h1>Land Game</h1>
         <p>Created by <Anchor href="https://github.com/sandervspl">@sandervspl</Anchor></p>
         <GithubLink
           href="https://github.com/sandervspl/vite-react-boilerplate"
