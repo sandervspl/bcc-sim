@@ -5,6 +5,8 @@
 [context.production.environment]
   NEXT_SERVERLESS = "true"
   APP_ENV = "production"
+  NODE_VERSION = "14.7.0"
+  NPM_VERSION = "7.8.0"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
