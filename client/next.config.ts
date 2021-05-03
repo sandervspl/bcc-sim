@@ -30,6 +30,7 @@ const config = (phase: string, config: NextConfig) => {
       // Enable webpack 5
       webpack5: true,
     },
+    target: 'serverless',
   };
 
   /**

@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "7.12.13",
+    "@netlify/plugin-nextjs": "3.2.0",
     "@next/bundle-analyzer": "10.2.0",
     "@svgr/webpack": "5.5.0",
     "@types/copy-webpack-plugin": "8.0.0",
