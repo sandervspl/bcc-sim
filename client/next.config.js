@@ -1,3 +1,4 @@
+/* eslint-disable */
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getProtoOf = Object.getPrototypeOf;
@@ -238,7 +239,8 @@ var config = (phase, config2) => {
     poweredByHeader: false,
     future: {
       webpack5: true
-    }
+    },
+    target: "serverless"
   });
   if (phase !== import_constants.PHASE_PRODUCTION_SERVER) {
     const webpack = require("webpack");
