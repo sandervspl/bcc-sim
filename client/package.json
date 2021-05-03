@@ -16,7 +16,7 @@
     "lint": "eslint --ext .ts --ext .tsx src/",
     "analyze": "BUNDLE_ANALYZE=both npm run build",
     "typecheck": "tsc --noEmit",
-    "postinstall": "npx patch-package"
+    "postinstall": "npx patch-package; npm run build:nextconfig"
   },
   "dependencies": {
     "express": "4.17.1",
