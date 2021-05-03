@@ -1,0 +1,14 @@
+{
+  "name": "land-game",
+  "short_name": "land",
+  "icons": [
+    {
+      "src": "/_next/static/favicon.ico",
+      "sizes": "64x64"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#fff"
+}

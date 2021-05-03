@@ -1,6 +1,5 @@
 import * as i from 'types';
 import { ThemedCssFunction } from 'styled-components';
-
 import theme from './theme';
 import { sizes } from './utils';
 
