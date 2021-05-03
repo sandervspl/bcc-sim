@@ -1,11 +1,9 @@
 import * as i from 'types';
 import React from 'react';
 
-import Logo from 'vectors/logo.svg';
-
 import { getData } from 'ducks/test';
 import { useSelector } from 'hooks';
-import { Header, Content } from 'modules/Home/styled';
+import { Content } from 'modules/Home/styled';
 import { wrapper } from 'store';
 
 /**
@@ -17,9 +15,6 @@ const Data: i.NextPageComponent<DataProps, DataQueries> = ({ query }) => {
 
   return (
     <>
-      <Header>
-        <Logo />
-      </Header>
       <Content>
         This page is to show how to use Redux.<br /><br />
         data: <pre>{JSON.stringify(data, null, 2)}</pre>
