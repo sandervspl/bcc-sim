@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Land game client",
   "scripts": {
-    "dev": "npm run build:nextconfig; DEV=true node scripts/esbuild.server.js",
-    "build": "npm run build:nextconfig; next build; node scripts/esbuild.server.js",
+    "dev": "npm run build:nextconfig && DEV=true node scripts/esbuild.server.js",
+    "build": "npm run build:nextconfig && next build && node scripts/esbuild.server.js",
     "build:nextconfig": "node scripts/esbuild.nextconfig.js",
     "server": "NODE_ENV=production node dist/server/index.js",
     "lint": "eslint --ext .ts --ext .tsx src/",
