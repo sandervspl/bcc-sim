@@ -19,7 +19,6 @@
     "postinstall": "npx patch-package; npm run build:nextconfig"
   },
   "dependencies": {
-    "express": "4.17.1",
     "lodash": "4.17.21",
     "next": "10.2.0",
     "next-redux-wrapper": "6.0.2",
@@ -37,7 +36,6 @@
     "@next/bundle-analyzer": "10.2.0",
     "@svgr/webpack": "5.5.0",
     "@types/copy-webpack-plugin": "8.0.0",
-    "@types/express": "4.17.11",
     "@types/lodash": "4.14.168",
     "@types/node": "15.0.1",
     "@types/react": "17.0.4",
