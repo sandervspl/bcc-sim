@@ -2,18 +2,22 @@
   "name": "land-game-client",
   "version": "0.0.1",
   "description": "Land game client",
+  "author": "Sander Vispoel",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.7.0",
+    "npm": ">=7.8.0"
+  },
   "scripts": {
     "dev": "npm run build:nextconfig && DEV=true node scripts/esbuild.server.js",
     "build": "npm run build:nextconfig && next build && node scripts/esbuild.server.js",
     "build:nextconfig": "node scripts/esbuild.nextconfig.js",
-    "server": "NODE_ENV=production node dist/server/index.js",
+    "server": "next start",
     "lint": "eslint --ext .ts --ext .tsx src/",
     "analyze": "BUNDLE_ANALYZE=both npm run build",
     "typecheck": "tsc --noEmit",
     "postinstall": "npx patch-package"
   },
-  "author": "Sander Vispoel",
-  "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
     "lodash": "4.17.21",
