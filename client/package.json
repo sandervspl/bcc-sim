@@ -9,8 +9,8 @@
     "npm": ">=7.8.0"
   },
   "scripts": {
-    "dev": "npm run build:nextconfig && DEV=true node scripts/esbuild.server.js",
-    "build": "npm run build:nextconfig && next build && node scripts/esbuild.server.js",
+    "dev": "DEV=true node scripts/esbuild.server.js",
+    "build": "next build && node scripts/esbuild.server.js",
     "build:nextconfig": "node scripts/esbuild.nextconfig.js",
     "server": "next start",
     "lint": "eslint --ext .ts --ext .tsx src/",
