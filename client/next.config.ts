@@ -53,31 +53,6 @@ const config = (phase: string, config: NextConfig) => {
          * config of Next (unless you are trying to overwrite something) or things might break.
         */
 
-
-        // Push polyfills before all other code
-
-        // Type-guard and type-cast for entry prop
-        function isEntryFn(obj: typeof config.entry): obj is () => Promise<EntryStatic> {
-          return typeof obj === 'function';
-        }
-
-        const originalEntry = config.entry;
-
-        if (isEntryFn(originalEntry)) {
-          config.entry = async () => {
-            const entries = await originalEntry();
-            const mainEntry = entries['main.js'] as string[];
-            const polyfillsPath = path.resolve('config/polyfills.ts');
-
-            if (mainEntry && !mainEntry.includes(polyfillsPath)) {
-              mainEntry.unshift(polyfillsPath);
-            }
-
-            return entries;
-          };
-        }
-
-
         const staticPathConfig = {
           publicPath: '/_next/static/',
           outputPath: `${isServer ? '../' : ''}static/`,
@@ -238,9 +213,5 @@ const config = (phase: string, config: NextConfig) => {
 
   return cfg;
 };
-
-
-type EntryStatic = string | webpack.EntryObject | string[];
-
 
 module.exports = config;
