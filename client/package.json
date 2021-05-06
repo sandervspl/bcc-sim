@@ -9,14 +9,14 @@
     "npm": ">=7.8.0"
   },
   "scripts": {
-    "dev": "DEV=true node scripts/esbuild.server.js",
+    "dev": "npm run build:nextconfig && DEV=true node scripts/esbuild.server.js",
     "build": "next build && node scripts/esbuild.server.js",
     "build:nextconfig": "node scripts/esbuild.nextconfig.js",
     "server": "next start",
     "lint": "eslint --ext .ts --ext .tsx src/",
     "analyze": "BUNDLE_ANALYZE=both npm run build",
     "typecheck": "tsc --noEmit",
-    "postinstall": "npx patch-package; npm run build:nextconfig"
+    "postinstall": "npx patch-package"
   },
   "dependencies": {
     "lodash": "4.17.21",
