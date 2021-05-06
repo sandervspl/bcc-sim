@@ -6,20 +6,6 @@ import { Content } from 'modules/Home/styled';
 
 
 const Home: i.NextPageComponent = () => {
-  React.useEffect(() => {
-    // polyfill test
-    const obj = { a: 1 };
-    const clone  = { ...obj };
-    console.log({ clone });
-
-    fetch('https://cms.sandervispoel.com/bedroom-medias')
-      .then((res) => res.json())
-      .then((data) => console.log({ data }));
-
-    const url = new URL(window.location.href);
-    console.log({ url });
-  }, []);
-
   return (
     <>
       <Content>
