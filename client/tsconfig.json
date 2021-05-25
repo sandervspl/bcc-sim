@@ -18,8 +18,6 @@
     "baseUrl": ".",
     "paths": {
       "config": ["config/index"],
-      "ducks": ["src/ducks/index"],
-      "ducks/*": ["src/ducks/*"],
       "modules": ["src/components/modules/index"],
       "modules/*": ["src/components/modules/*"],
       "common": ["src/components/common/index"],
@@ -33,6 +31,8 @@
       "styles/*": ["src/styles/*"],
       "services": ["src/services"],
       "services/*": ["src/services/*"],
+      "state": ["src/state/index"],
+      "state/*": ["src/state/*"],
       "store": ["src/store"],
       "types": ["src/types/index"],
       "vectors/*": ["src/static/vectors/*"]

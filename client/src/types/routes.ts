@@ -5,6 +5,4 @@ type value = string;
 
 export type Routes =
  | '/'
- | `/?${key}=${value}`
- | '/data'
- | `/data?${key}=${value}`;
+ | `/?${key}=${value}`;

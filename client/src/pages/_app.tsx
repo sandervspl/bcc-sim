@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components';
 import { RouterContextProvider } from 'hooks';
 import { GlobalStyling } from 'styles';
 import theme from 'styles/theme';
-import { wrapper } from 'store';
 
 const App: React.VFC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -26,4 +25,4 @@ const App: React.VFC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default wrapper.withRedux(App);
+export default App;

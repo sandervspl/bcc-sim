@@ -10,10 +10,7 @@ const Home: i.NextPageComponent = () => {
     <>
       <Content>
         <p>
-          <Anchor to="/data">data</Anchor>
-        </p>
-        <p>
-          Created by
+          BCC Sim by
           <Anchor to="https://github.com/sandervspl"> @sandervspl </Anchor>
         </p>
       </Content>
