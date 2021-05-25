@@ -42,6 +42,8 @@ const config = (phase: string, config: NextConfig) => {
     const webpack = require('webpack');
     const CopyWebpackPlugin = require('copy-webpack-plugin');
     const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+    const withAntdLess = require('next-plugin-antd-less');
+    const { getThemeVariables } = require('antd/dist/theme');
 
     cfg = {
       ...cfg,
@@ -147,6 +149,12 @@ const config = (phase: string, config: NextConfig) => {
         return config;
       },
     };
+
+    // Add antd / less support
+    cfg = withAntdLess({
+      ...cfg,
+      lessVarsFilePath: path.resolve('client/src/styles/styles.antd.less'),
+    });
   }
 
   /**

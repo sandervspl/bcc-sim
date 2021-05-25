@@ -7,6 +7,7 @@ import { RouterContextProvider } from 'hooks';
 import { GlobalStyling } from 'styles';
 import theme from 'styles/theme';
 
+
 const App: React.VFC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>

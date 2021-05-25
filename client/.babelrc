@@ -8,6 +8,7 @@
     ["babel-plugin-styled-components", {
         "ssr": true,
         "preprocess": false
-    }]
+    }],
+    ["import", { "libraryName": "antd", "style": true }]
   ]
 }

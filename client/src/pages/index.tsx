@@ -1,7 +1,7 @@
 import * as i from 'types';
 import React from 'react';
+import { Button } from 'antd';
 
-import { Anchor } from 'common';
 import { Content } from 'modules/Home/styled';
 
 
@@ -11,7 +11,7 @@ const Home: i.NextPageComponent = () => {
       <Content>
         <p>
           BCC Sim by
-          <Anchor to="https://github.com/sandervspl"> @sandervspl </Anchor>
+          <Button type="link" href="https://github.com/sandervspl">@sandervspl</Button>
         </p>
       </Content>
     </>
