@@ -153,7 +153,8 @@ const config = (phase: string, config: NextConfig) => {
     // Add antd / less support
     cfg = withAntdLess({
       ...cfg,
-      lessVarsFilePath: path.resolve('client/src/styles/styles.antd.less'),
+      lessVarsFilePath: './src/styles/styles.antd.less',
+      lessVarsFilePathAppendToEndOfContent: true,
     });
   }
 
