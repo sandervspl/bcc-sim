@@ -1,6 +1,6 @@
 {
-  "name": "land-game",
-  "short_name": "land",
+  "name": "bcc-sim",
+  "short_name": "sim",
   "icons": [
     {
       "src": "/_next/static/favicon.ico",

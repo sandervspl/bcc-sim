@@ -1,3 +1,3 @@
-# 🚧 Land Game Client 🚧
+# 🚧 BCC Sim Client 🚧
 
-Client codebase for Land Game
+Client codebase for BCC Sim

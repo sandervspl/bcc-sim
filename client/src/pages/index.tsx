@@ -10,7 +10,7 @@ const Home: i.NextPageComponent = () => {
     <>
       <Content>
         <p>
-          <Anchor to="/data">Land Game</Anchor>
+          <Anchor to="/data">data</Anchor>
         </p>
         <p>
           Created by

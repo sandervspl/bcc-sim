@@ -1,3 +1,3 @@
-# 🚧 Land Game 🚧
+# 🚧 BCC Sim 🚧
 
-Monorepo for Land Game
+Monorepo for BCC Sim

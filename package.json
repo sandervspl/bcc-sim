@@ -1,19 +1,19 @@
 {
-  "name": "land-game",
+  "name": "bcc-sim",
   "version": "0.1.0",
-  "description": "Monorepo for Land Game",
+  "description": "Monorepo for bcc-sim",
   "scripts": {
     "build:client": "npm --prefix client run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandervspl/land-game.git"
+    "url": "git+https://github.com/sandervspl/bcc-sim.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sandervspl/land-game/issues"
+    "url": "https://github.com/sandervspl/bcc-sim/issues"
   },
-  "homepage": "https://github.com/sandervspl/land-game#readme"
+  "homepage": "https://github.com/sandervspl/bcc-sim#readme"
 }

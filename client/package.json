@@ -1,7 +1,7 @@
 {
-  "name": "land-game-client",
+  "name": "bcc-sim-client",
   "version": "0.0.1",
-  "description": "Land game client",
+  "description": "bcc sim client",
   "author": "Sander Vispoel",
   "license": "ISC",
   "engines": {
