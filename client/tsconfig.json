@@ -35,7 +35,8 @@
       "state/*": ["src/state/*"],
       "store": ["src/store"],
       "types": ["src/types/index"],
-      "vectors/*": ["src/static/vectors/*"]
+      "vectors/*": ["src/static/vectors/*"],
+      "bcc-sim/types": ["../types/index"]
     },
     "lib": [
       "dom",
