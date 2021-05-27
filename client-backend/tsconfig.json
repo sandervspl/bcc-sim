@@ -13,6 +13,7 @@
     "strict": true,
     "sourceMap": true,
     "incremental": true,
+    "strictPropertyInitialization": false,
     "outDir": "./dist",
     "baseUrl": "src",
     "paths": {

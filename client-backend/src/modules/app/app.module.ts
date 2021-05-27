@@ -6,6 +6,8 @@ import * as dotenv from 'dotenv';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
+import * as entities from 'entities';
+
 
 
 dotenv.config({
@@ -21,7 +23,7 @@ dotenv.config({
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
-      entities: [],
+      entities: Object.values(entities),
       synchronize: process.env.NODE_ENV !== 'production', // false on production
       retryAttempts: 2,
     }),
