@@ -1,3 +1,6 @@
+import * as entities from '../client-backend/src/entities';
+
+
 export enum INVENTORY_TYPE {
   NON_EQUIP      = 0,
   HEAD           = 1,
@@ -42,3 +45,5 @@ export enum SUBCLASS_ARMOR {
   ARMOR_IDOL    = 8,
   ARMOR_TOTEM   = 9,
 }
+
+export interface ItemTemplate extends entities.ItemTemplate {};

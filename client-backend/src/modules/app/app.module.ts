@@ -7,7 +7,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import * as entities from 'entities';
-
+import { ItemModule } from 'modules/item/item.module';
 
 
 dotenv.config({
@@ -27,6 +27,7 @@ dotenv.config({
       synchronize: process.env.NODE_ENV !== 'production', // false on production
       retryAttempts: 2,
     }),
+    ItemModule,
   ],
   controllers: [AppController],
   providers: [AppService],
