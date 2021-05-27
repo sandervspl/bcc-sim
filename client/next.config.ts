@@ -43,7 +43,6 @@ const config = (phase: string, config: NextConfig) => {
     const CopyWebpackPlugin = require('copy-webpack-plugin');
     const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
     const withAntdLess = require('next-plugin-antd-less');
-    const { getThemeVariables } = require('antd/dist/theme');
 
     cfg = {
       ...cfg,
