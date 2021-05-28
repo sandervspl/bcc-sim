@@ -94,6 +94,15 @@ export module Item {
     QUIVER         = 27,
     RELIC          = 28,
   }
+
+  export enum QUALITY {
+    POOR      = 0,
+    COMMON    = 1,
+    UNCOMMON  = 2,
+    RARE      = 3,
+    EPIC      = 4,
+    LEGENDARY = 5,
+  }
 }
 
 export interface ItemTemplate extends entities.ItemTemplate {};

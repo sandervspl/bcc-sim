@@ -2,7 +2,7 @@ import * as sim from 'bcc-sim/types';
 import { Controller, Get, Param, Query } from '@nestjs/common';
 
 import { ItemService } from './item.service';
-import { SearchParams, SearchQueries, SingleParams } from './types';
+import { SearchQueries, SingleParams } from './types';
 
 
 @Controller('/item')
@@ -18,11 +18,10 @@ export class ItemController {
     return await this.itemService.single(param.id);
   }
 
-  @Get('/search/:subclass')
+  @Get('/search')
   async search(
-    @Param() param: SearchParams,
     @Query() query: SearchQueries,
   ): Promise<sim.ItemTemplate[]> {
-    return await this.itemService.searchSubclass(param.subclass, query.q);
+    return await this.itemService.search(query);
   }
 }
